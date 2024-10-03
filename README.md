@@ -45,3 +45,28 @@ En los <img src="" alt=""> el alt es el texto alternativo de la imagen y debe de
 
 COMANDOS:
 Alt + Flechas arriba o abajo : MUEVE LAS LÍNEAS DE CÓDIGO ARRIBA O ABAJO
+
+REPASO CSS
+
+CLASE REPASO 3
+
+VW y VH:
+Viewport Width Medida relativa de anchura al tamaño de la pantalla del usuario
+Funciona como un % pero relativo al viewport del usuario.
+
+Viewport Height Medida relativa de altura al tamaño de la pantalla del usuario
+
+La diferencia de esta medida con la medida % es que los %'s hacen referencia al tamaño del contenedor o elemento padre.
+
+
+
+
+## CREAR UN LAYOUT RESPONSIVE
+
+Para crear un layout responsive y que tenga sentido en nuestra web debemos usar contenedores para organizar el contenido de la web. 
+
+Estos contenedores
+
+## FLEXBOX
+
+Gúia flexbox https://css-tricks.com/snippets/css/a-guide-to-flexbox/ 

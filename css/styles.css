@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+header {
+    height: 100vh;
+    background-color: greenyellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rm;
+}
+
+header button{
+    width: 14rem;
+    padding: 1rem 2rem;
+
+}
+
+h1{
+    font-size: 3.2rem;
+}
+
+nav .menu-flex {
+    background-color: blueviolet;
+    padding: 3rem;
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    justify-content: space-around;
+}
+
+nav .menu-flex a{ /*Al poner esa a, selecciona SOLO los enlaces que hemos metido en la lista*/
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: 0.33s; /*no se mete en el hover para que esta transición suceda cuando pones el ratón y cuando lo quitas, en el hover solo aparecería al poner el ratón encima, pero al quitarlo el cambio sería instantáneo*/
+    
+}
+
+nav .menu-flex a:hover{
+    color:blueviolet;
+    background-color: aliceblue;
+}
+
+
+
+
+
+
+
+
+/* MEDIA QUERIE*/
+
+/*Dentro de los paréntesis del media query, definimos el breakpoint en píxeles*/
+
+/*max-width (desktop-first) -> Menos de x píxeles
+
+max-width se puede escribir tb como width <= x */
+
+@media screen and (width <= 512px) {
+    
+    h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+    nav .menu-flex {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    header button{
+        display: none;
+    }
+}

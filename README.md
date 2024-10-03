@@ -58,6 +58,12 @@ Viewport Height Medida relativa de altura al tamaño de la pantalla del usuario
 
 La diferencia de esta medida con la medida % es que los %'s hacen referencia al tamaño del contenedor o elemento padre.
 
+EM y REM:
+
+Dos medidas relativas al font size
+
+Em relativo al tamaño del font size del contenedor padre. 
+
 
 
 
@@ -70,3 +76,11 @@ Estos contenedores
 ## FLEXBOX
 
 Gúia flexbox https://css-tricks.com/snippets/css/a-guide-to-flexbox/ 
+
+## MEDIA QUERIES
+
+Para realizar ajustes sobre un layout adaptativo, que habremos maquetado usando propiedades de Flexbox o de Grid, usaremos las media-queries.
+
+Se trata de una regla especial de CSS que me permite detectar el tamaño del ancho de la pantalla del usuario y sobreescribir ciertos selectores y propiedades que me interesen para adaptar mi interfaz o layout.
+
+Estos media-queries siempre se encontrarán al final del archivo de CSS debajo de mi código de CSS base.

@@ -77,6 +77,7 @@ max-width se puede escribir tb como width <= x */
     }
 
     header button{
-        display: none;
+        display: none; /*la diferencia entre opacity 0 y display none es que bajar la opacidad hace que sea invisible pero ocupe espacio, display none hace que desaparezca, pero del renderizado, el botón sigue en el html*/
+        
     }
 }

@@ -85,3 +85,28 @@ Se trata de una regla especial de CSS que me permite detectar el tamaño del anc
 
 Estos media-queries siempre se encontrarán al final del archivo de CSS debajo de mi código de CSS base.
 
+## GRID CSS LAYOUT
+
+Grid al igual que flexbox, no es más que un conjunto de propiedades para desarrollar interfaces adaptativas y responsive.
+
+La estructura que debemos tener en nuestro html para usar las propiedades de Grid, es la misma que en Flexbox, es decir, un contenedor (que será nuestro contenedor grid) y una serie de elementos hijos.
+
+En nuestra web, podremos maquetar algunas partes con las propiedades de Flexbox, y otras partes con Grid. 
+
+## TRANSITION:
+
+La propiedad transition me permite crear una transición animada entre dos estados de algún elemento.
+
+## TRANSFORM:
+
+La propiedad transform es una propiedad especial que toma como valores, funciones de css, que me permiten modificar la forma, el tamaño, la posición, la rotación etc... de un elemento de forma fija o a través de un efecto :hover.
+
+## ANIMATION
+
+Las animaciones de CSS me permiten crear interpolaciones entre fotogramas clave. 
+
+1) Definir animación con @keyframes, y darle un nombre con sentido lógico.
+
+2) Aplicar la animación a un elemento con la propiedad animation
+
+3) 

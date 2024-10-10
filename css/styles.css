@@ -3,7 +3,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
+}
 
+img{ /*Esto hace que todas las imágenes sean responsive*/
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
 }
 
 header {
@@ -19,10 +24,29 @@ header {
 header button{
     width: 14rem;
     padding: 1rem 2rem;
+    outline: none;
+    border: none;
+    background-color: blueviolet;
+    color: aliceblue;
+    font-weight: bold;
 
+    /*La propiedad transition siempre debe encontrarse en el estado inicial del elemento al que le queramos meter el hover*/
+    transition: 0.333s;
+    transform: skew(10deg)
+}
+
+header button:hover{
+    cursor: pointer;
+    color: blueviolet;
+    background-color: aliceblue;
+    transform: scale(1.05) rotate(5deg);
 }
 
 h1{
+    font-size: 3.2rem;
+}
+
+h2{
     font-size: 3.2rem;
 }
 
@@ -49,11 +73,32 @@ nav .menu-flex a:hover{
     background-color: aliceblue;
 }
 
+/*GALLERY*/
 
+#gallery {
+    padding: 6rem;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
 
+#gallery .gallery-cont{
+    display: grid;
+    grid-template-columns: auto auto auto; /*cada auto marca una columna nueva, el auto hace que se apliquen las mismas modificaciones a todas, pero si x ejemplo pones 25%, 50% y 25%, altera los tamaños de cada columna de forma independiente*/
+    gap: 1rem;
+}
 
+/*Esto fuerza que todas las imágenes se adapten al contenedor, establece que las imágenes lleguen a su 100% de altura, y el cover recorta las partes de la imágen que por tamaño saldrían de la pantalla*/
 
+#gallery .gallery-cont img{ 
+    object-fit: cover;
+    height: 100%;
+}
 
+/* ANIMATIONS */
 
 
 /* MEDIA QUERIE*/
@@ -79,5 +124,9 @@ max-width se puede escribir tb como width <= x */
     header button{
         display: none; /*la diferencia entre opacity 0 y display none es que bajar la opacidad hace que sea invisible pero ocupe espacio, display none hace que desaparezca, pero del renderizado, el botón sigue en el html*/
         
+    }
+
+    #gallery .gallery-cont{
+        grid-template-columns: auto;
     }
 }

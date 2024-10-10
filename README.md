@@ -84,3 +84,4 @@ Para realizar ajustes sobre un layout adaptativo, que habremos maquetado usando 
 Se trata de una regla especial de CSS que me permite detectar el tamaño del ancho de la pantalla del usuario y sobreescribir ciertos selectores y propiedades que me interesen para adaptar mi interfaz o layout.
 
 Estos media-queries siempre se encontrarán al final del archivo de CSS debajo de mi código de CSS base.
+

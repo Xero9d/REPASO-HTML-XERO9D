@@ -109,4 +109,19 @@ Las animaciones de CSS me permiten crear interpolaciones entre fotogramas clave.
 
 2) Aplicar la animación a un elemento con la propiedad animation
 
+
+## JAVASCRIPT (JAVASCRIPT NATIVO O VANILLA JS)
+
+Es el único lenguaje de programación que funciona en el lado del cliente. 
+
+JS es interpretado por el navegador y no necesita ser compilado (lo que le hace ser más rápido y eficiente). 
+
+Javascript es un lenguaje débilmente tipado. 
+
+3 formas diferentes de añadir código de JS a nuestro HTML (nuestra web).
+
+1) Directamente en los elementos HTML. Mediante atributos de tipo evento podemos llamar a funciones de JS pero esta forma no es la más correcta.
+
+2) Usando el elemento de HTML <script></script> que me permite añadir código de JS dentro del elemento. Podemos cargar este elemento y el código de JS en el <head> de nuestro HTML (esto lo reservaremos normalmente para cargar librerias de JS). 
+
 3) 

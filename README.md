@@ -109,6 +109,7 @@ Las animaciones de CSS me permiten crear interpolaciones entre fotogramas clave.
 
 2) Aplicar la animación a un elemento con la propiedad animation
 
+CTRL + Ç PARA AUTOCOMENTAR ALGO
 
 ## JAVASCRIPT (JAVASCRIPT NATIVO O VANILLA JS)
 
@@ -122,6 +123,35 @@ Javascript es un lenguaje débilmente tipado.
 
 1) Directamente en los elementos HTML. Mediante atributos de tipo evento podemos llamar a funciones de JS pero esta forma no es la más correcta.
 
-2) Usando el elemento de HTML <script></script> que me permite añadir código de JS dentro del elemento. Podemos cargar este elemento y el código de JS en el <head> de nuestro HTML (esto lo reservaremos normalmente para cargar librerias de JS). 
+2) Usando el elemento de HTML <script></script> que me permite añadir código de JS dentro del elemento. Podemos cargar este elemento y el código de JS en el <head> de nuestro HTML (esto lo reservaremos normalmente para cargar librerias de JS).
 
-3) 
+Esta etiqueta <script></script> también se puede encontrar justo antes de cerrar el <body></body> esta forma es la más correcta de cargarlo en el <head> ya que permite que se haya cargado todo el código de HTML previamente. 
+
+3) Enlazar un archivo externo de JS a nuestro HTML.
+
+## VARIABLES DE JS
+
+Para declarar una variable de JS (v5) usaremos la palabra reservada -> var 
+
+1) Declaramos la variable y le damos un nombre.
+
+2) Le asignamos un valor a la variable con el simbolo = 
+
+3) Llamar a la variable o invocarla (invoke) o hacer referencia (reference) 
+
+A las variables se les puede reasignar un valor nuevo tantas veces como sea necesario. 
+
+Las variables pueden contener letras, números y _ (guión bajo).
+
+Actualmente, en la versión (v6) de JS, existen 2 formas nuevas de declarar variables:
+
+- let (sustituye a var)
+- const -> Este tipo de variables (constantes) no permiten re-asignar un nuevo valor. 
+
+TIPOS DE DATOS EN JS:
+
+- String (cadena de carácteres o texto) -> puede contener: letras, números, carácteres especiales y espacios. Siempre estará contenido entre comillas dobles o simples dependiendo de la situación.
+
+- Number (números) -> tenemos 2 tipos de números: los enteros (int o integer) y los decimales (float). Los números decimales SIEMPRE con un (.) no con (,)
+
+- Boolean (booleano) -> Verdadero o Falso (true or false) 

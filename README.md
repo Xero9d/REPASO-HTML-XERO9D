@@ -155,3 +155,5 @@ TIPOS DE DATOS EN JS:
 - Number (números) -> tenemos 2 tipos de números: los enteros (int o integer) y los decimales (float). Los números decimales SIEMPRE con un (.) no con (,)
 
 - Boolean (booleano) -> Verdadero o Falso (true or false) 
+
+## 

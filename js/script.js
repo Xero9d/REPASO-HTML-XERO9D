@@ -1,38 +1,50 @@
-console.log("script.js cargado correctamente");
+// let isDriver = true;
 
-var myname = "Ricardo";
+// console.log(2<3);
 
-console.log(myname);
+// let exp1 = true;
+// let exp2 = false;
 
-myname = "Xero";
+// if (exp1 && exp2){
+//     console.log("La condición es true")
+// }
 
-console.log(myname);
+// let animals = ["cat", "dog", "fish", "bird"];
 
-myname = "faker";
+// console.log(animals);
 
-console.log(myname);
+// let arr_cars = ["Volvo", "BMW", "Ford", 531, false, ["Kia", "Renault"]];
 
-let surname = "Gracia";
+// const USER = {
+//     id: 354,
+//     name: "Ricardo",
+//     lastname: "Gracia",
+//     age: 22,
+//     location: [12.1513501935, 95.231124145155],
+//     is_driver: true,
+// }
 
-console.log(surname);
+// console.log("Hola", USER.name);
 
-let age = 22;
-let date = "1234";
-const PI = 3.14;
+// prompt() me permite generar un popup con un input de texto
 
-let quote = 'Platón dijo: "Solo sé que no sé nada"';
-let enText = "She's so cool!";
+// let user_input= window.prompt("Hola, nombre?");
 
-let floatNum = 5.7;
-let another_Num = 33;
+// console.log("Un placer " + user_input);
 
-let sum_result = floatNum + another_Num;
-let subs_result = floatNum - another_Num;
-let mult_result = floatNum * another_Num;
-let div_result = floatNum /another_Num;
+// Función que calcula un descuento sobre el precio de un producto
 
-console.log(sum_result, subs_result, mult_result, div_result);
+// let prod00 = 59.99;
+// let prod01 = 15.99;
+// const DISCOUNT30 = 0.3;
+// const DISCOUNT50 = 0.5;
 
-let isDriver = true;
+function greetUser(){
+    let user_input= window.prompt("Hola, nombre?");
+    alert("Bienvenido " + user_input)
+}
 
-console.log(2<3);
+// Crear una función que se llame greetUser() y que haga 2 cosas:
+//  Preguntar al usuario su nombre y guardar la respuesta.
+// Mostrar el nombre del usuario junto con un saludito de texto en una ventana pop up
+// La llamada o invocación de la función greetUser() se encontrará en un botón de mi web, donde el usuario hará click. PISTA: el botón en el html debe tener un evento OnClick y dentro de mi función greetUser() usaré dos funciones built-in de JS.

@@ -156,4 +156,52 @@ TIPOS DE DATOS EN JS:
 
 - Boolean (booleano) -> Verdadero o Falso (true or false) 
 
-## 
+- NaN -> Not a Number: Es un tipo de dato que aparecerá como resultado cuando intentemos hacer un cálculo y JS no sepa resolverlo.
+
+- Array (lista) [] -> Se trata de un tipo de dato que me permite crear un conjunto de otros tipos de datos. Estos elementos de un Array, pueden ser todos del mismo tipo, o de diferentes tipos.
+
+- Object (objeto) {} -> Son un tipo de dato complejo que me permite guardar de forma ordenada otros tipos de datos siguiendo el formato -> clave: valor, (key-value). Todos los tipos de datos introducidos dentro de un objeto acaban en , y no en ;
+
+## Comparaciones de JS:
+
+- Mayor que >
+- Menor que <
+- Mayor o igual que >=
+- Menor o igual que <=
+- Igual que == (comparación no estricta o débil)
+- Totalmente igual que === (comparación estrica, no solo compara el valor del dato si no el tipo de dato, no es lo mismo un var = 3 que un string = 3)
+- Diferente que !=
+- Totalmente diferente !== (compara por tipo de dato también)
+
+## Operadores Lógicos o Puertas Lógicas:
+
+- AND lógico -> &&
+- OR Lógico -> || 
+- NOT Lógico -> !
+
+## Funciones de JS:
+
+Una función (o método) es un conjunto de instrucciones en forma de líneas de código que cumplen un trabajo determinado. 
+
+Las funciones de JS trabajan como una "caja negra". 
+Nosotros llamamos o usamos una función porque sabemos qué es lo que hace, pero internamente no sabemos cómo funciona. Esto en el caso de que usemos ya definidas. 
+
+Existen funciones que trabajan dándonos simplemente un output o resultado de su trabajo y existen muchas otras funciones que admiten o necesitan un input para poder trabajar y darnos un output.
+
+Tenemos dos tipos de funciones en JS:
+
+1) Las funciones de JS ya definidas en el core del lenguaje que nosotros podemos usar para hacer un trabajo determinado. Por ejemplo, las funciones alert() y log(), son funciones de este tipo que se conocen como funciones built-in.
+
+2) Las funciones de JS que nosotros mismos podemos definir desde cero con nuestro popio código. Estas funciones una vez declaradas las podremos usar tantas veces como necesitemos.
+
+Instrucciones para crear y usar una función propia:
+
+1. Declaramos la función con la palabra reservada function:
+
+2. Le damos un nombre a la función. Dicho nombre lo decidimos nosotros y debe representar de forma clara el trabajo que realizará dicha función. El nombre de la función incluye unos paréntesis al final.
+
+3. Escribir el código o la lógica de la función.
+
+4. Usar la función llamándola o invocándola.
+
+5. 

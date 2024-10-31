@@ -204,4 +204,42 @@ Instrucciones para crear y usar una función propia:
 
 4. Usar la función llamándola o invocándola.
 
-5. 
+Para que una función acepte parámetros de entrada, debemos definirlos en el paréntesis de la declaración de la función.
+
+## SELECTORES DE JS:
+Con los selectores de JS podemos seleccionar elementos del HTML y modificarlos, o manipularlos.
+
+Para JS el HTML se representa en forma de árbol de nodos conocido como DOM (Document Object Model).
+
+- La variable global document (que se genera al cargar la web automáticamente), contiene todo el HTML y podremos seleccionar diferentes elementos usando los selectores de JS.
+
+ - getElementsByTagName() -> Selecciona uno o varios elementos que coincidan con el nombre de la etiqueta de HTML que le pasamos como parámetro a la función. 
+ ESTA FUNCIÓN DEVUELVE SIEMPRE UN ARRAY.
+
+- getElementsByTagClass() -> Selecciona los elementos por clase y devuelve un ARRAY.
+
+- getElementsByTagId() -> Busca un id en el DOM y devuelve el elemento con ese id.
+
+Selectores tipo query con sintaxis de CSS:
+
+- querySelector() -> Selecciona un elemento y recibe como parámetro un selector de tipo CSS (si este selector coincide con varios elementos del HTML seleccionará el primero). PARA SELECCIONAR PARÁMETROS DE CSS:
+
+1) SI QUIERO UN ID USAMOS UN # PRIMERO
+
+2) SI QUIERO UNA CLASE USAMOS UN . PRIMERO
+
+- querySelectorAll() -> Lo mismo pero para seleccionar más de un resultado, el resultado aparecerá en forma de ARRAY.
+
+## SETTERS Y GETTERS DE JS
+
+Tenemos en todos los elementos de HTML diferentes propiedades de las cuales podemos obetener su valor (get) o modificar y asignar nuevos valores (set). 
+
+EVENTOS DE JS:
+
+Los usuarios dentro de las páginas web pueden "disparar" (trigger) diferentes eventos. Mediante JS podemos "capturar" estos eventos y hacer algo en respuesta. Algunos ejemplos de eventos:
+
+- Detectar cuando se ha cargado completamente el HTML.
+- Detectar cuando el usuario hace click sobre un elemento (también existe el evento doble click).
+- Detectar cuando el usuario hace scroll (sobre toda la web o sobre un elemento determinado).
+- Detectar cuando un campo input cambia de valor.
+- Detectar cuando el cursor pasa por encima de un elemento -> Con JS podemos diferenciar cuándo el cursor entra encima del elemento y cuándo sale del área del elemento.

@@ -68,33 +68,54 @@
 
 // 3. Llamamos a la función dentro del evento
 
-// function greetUser(){
+// function greetUser(){  // CREAMOS LA FUNCIÓN GREET USER
 //     let user_input= window.prompt("Hola, nombre?");
 //     alert("Bienvenido " + user_input);
 // }
 
 // let btn = document.querySelector("#btnGreet");
 
-// btn.addEventListener("click", function(){
+// btn.addEventListener("click", function(){ //CREAMOS UN EVENTO PARA QUE DETECTE EL CLICK EN EL BOTÓN Y EJECUTE LA FUNCIÓN
 //     greetUser();
 // });
 
 // Acabamos de hacer una función en la que el usuario al darle al botón de Greet que hemos asignado en el index.html directamente desde el JS y no usando el código onclick dentro del index.html, haciendo que esto sea mucho más eficiente.
 
-let title = document.querySelector("#h1Title");
-let h2title = document.querySelector("#h2Title")
+// let title = document.querySelector("#h1Title");
+// let h2title = document.querySelector("#h2Title");
+// let header = document.querySelector("#header");
 
-title.addEventListener("mouseover", function(){
-    title.style.backgroundColor = "red";
-    h2title.textContent = "Has hecho Mouseover!";
-});
+// title.addEventListener("mouseover", function(){
+//     header.style.backgroundColor = "red";
+//     h2title.textContent = "Has hecho Mouseover!";
+// });
 
-title.addEventListener("mouseout", function(){
-    title.style.backgroundColor = null;
-    h2title.textContent = "Título Especial";
-});
+// title.addEventListener("mouseout", function(){
+//     header.style.backgroundColor = "";
+//     h2title.textContent = "Título Especial";
+// });
 
 //Cuando el usuario pase con el cursor por encima del titulo de la web, el color del fondo del header debe cambiar.
-// Extra: cuando el cursos del usuario salga del titulo el color del header debe volver a ser el original.
+// Extra: cuando el cursor del usuario salga del titulo el color del header debe volver a ser el original.
 // Extra2: cuando el cursor pase por encima del título, cambiar el texto del h2 y asignarle "Has hecho mouseover!"
 // Pista: Los eventos en los que se divide el hover de JS son mouseover y mouseout.
+
+
+//Logica para mostrar el menu movil cuando el usuario hace click en el icono de las barras.
+
+//Para abrir el menu cuando detectemos el click en el icono .fa-bars vamos a añadirle una clase al menu que contiene las opciones
+
+// Para cerrar el menu vamos a detectar el click en el icono .fa-xmark y le vamos a quitar la clase al menu ul
+
+let menuOpts = document.querySelector("#menu .menu-flex");
+let btnOpenMenu = document.querySelector("#btnOpenMenu .fa-bars");
+let btnCloseMenu = document.querySelector("#btnCloseMenu .fa-xmark");
+
+btnOpenMenu.addEventListener("click", function(){
+    menuOpts.classList.add("show-menu");
+});
+
+btnCloseMenu.addEventListener("click", function(){
+    menuOpts.classList.remove("show-menu");
+});
+

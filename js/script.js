@@ -112,10 +112,24 @@ let btnOpenMenu = document.querySelector("#btnOpenMenu .fa-bars");
 let btnCloseMenu = document.querySelector("#btnCloseMenu .fa-xmark");
 
 btnOpenMenu.addEventListener("click", function(){
-    menuOpts.classList.add("show-menu");
+    menuOpts.classList.toggle("show-menu");
 });
 
 btnCloseMenu.addEventListener("click", function(){
-    menuOpts.classList.remove("show-menu");
+    menuOpts.classList.toggle("show-menu");
 });
 
+// Usando la función toggle() | Cambiar de modo claro a modo oscuro
+
+// Añadimos al HTML de la galería un botón que al ser pulsado va a "apagar" el color de fondo de la galería, es decir, como un modo oscuro, esto afecta también al texto de la galería
+
+// Tenemos que declarar algunas clases de CSS
+
+let btnDarkMode = document.querySelector("#btnDarkMode .fa-moon");
+let darkModeMenuOpts = document.querySelector("#gallery");
+let galleryTitle = document.querySelector("#subtitle");
+
+btnDarkMode.addEventListener("click", function(){
+    darkModeMenuOpts.classList.toggle("dark-mode");
+    galleryTitle.style.textColor = "white";
+});
